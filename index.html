@@ -404,6 +404,10 @@
       border: 1px dashed var(--border);
       margin-bottom: 28px;
       font-style: italic;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
     }
     .deadline-note i { color: var(--crimson); margin-right: 6px; }
     .submit-btn {
@@ -629,10 +633,10 @@
       <div class="form-error-msg">Пожалуйста, выберите вариант</div>
     </div>
 
-    <div class="deadline-note">
-      <i class="fas fa-clock"></i>
-      Просьба подтвердить присутствие до   <strong>  15   июля 2026</strong>
-    </div>
+   <div class="deadline-note">
+  <span><i class="fas fa-clock"></i> Просьба подтвердить присутствие до</span>
+  <strong style="color: var(--dark);">15 июля 2026</strong>
+</div>
 
     <button type="submit" class="submit-btn">
       <i class="fas fa-paper-plane"></i>&nbsp; Отправить ответ
